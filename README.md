@@ -16,7 +16,7 @@ Step by step guid
 
 ## HTTP Server
 ---
-- a little research about Go http package [net/http](https://pkg.go.dev/net/http)
+- a little research about Go [net/http](https://pkg.go.dev/net/http)
 - Add http listener
     >   http.ListenAndServe(":3000", nil)
 - add logger
@@ -27,7 +27,15 @@ Step by step guid
 
 ## Handler
 ---
+- one more little research Go [http Handler](https://pkg.go.dev/net/http#Handler)
 - add handler 
 - return Hello World
+
+## model and JSON
+---
+- one more little research Go [json/encoder](https://pkg.go.dev/encoding/json#Encoder)
+- movie model
+- encode movie model to json
+
 
 

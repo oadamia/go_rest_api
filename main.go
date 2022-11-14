@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
 	"net/http"
 )
@@ -15,5 +16,19 @@ type handler struct {
 
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Hello World"))
+
+	m := movie{
+		ID:    1,
+		Title: "scarface",
+		Desc:  "Drama",
+	}
+
+	json.NewEncoder(w).Encode(m)
+
+}
+
+type movie struct {
+	ID    int
+	Title string
+	Desc  string
 }
