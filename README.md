@@ -19,4 +19,10 @@ Step by step guid
 - a little research about Go http package [net/http](https://pkg.go.dev/net/http)
 - Add http listener
     >   http.ListenAndServe(":3000", nil)
+- add logger
+- error 
+    > listen tcp :3000: bind: address already in use
+- kill listener 
+    >   kill -9 $(lsof -ti:3000)
+
 

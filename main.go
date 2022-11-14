@@ -1,9 +1,11 @@
 package main
 
 import (
+	"log"
 	"net/http"
 )
 
 func main() {
-	http.ListenAndServe(":3000", nil)
+	log.Println("server started")
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }
