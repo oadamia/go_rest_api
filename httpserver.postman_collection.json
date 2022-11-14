@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "d17f6e76-ddd6-40f1-8968-f0d262d60680",
+		"name": "httpserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3962055"
+	},
+	"item": [
+		{
+			"name": "empty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 1,\n    \"Title\": \"Scarface\",\n    \"Desc\": \"Drama\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 2,\n    \"Title\": \"The Matrix\",\n    \"Desc\": \"Sci-Fi\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 2,\n    \"Title\": \"The Matrix\",\n    \"Desc\": \"Sci-Fi,Action\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies 1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 2,\n    \"Title\": \"The Matrix\",\n    \"Desc\": \"Sci-Fi,Action\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/restapi/v1/movies?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restapi",
+						"v1",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
