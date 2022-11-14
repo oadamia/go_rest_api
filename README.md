@@ -27,11 +27,11 @@ Step by step guid for presentation purposes
 
 ## Handler
 ---
-- one more little research Go [http Handler](https://pkg.go.dev/net/http#Handler)
+- one more little research Go [http/Handler](https://pkg.go.dev/net/http#Handler)
 - add handler 
 - return Hello World
 
-## model and JSON
+## Model and JSON
 ---
 - one more little research Go [json/encoder](https://pkg.go.dev/encoding/json#Encoder)
 - movie model
@@ -39,5 +39,9 @@ Step by step guid for presentation purposes
 - Content-Type application/json
 - add "server http" log
 
+## Path and http method
+---
+- two more little research [REST API](https://www.restapitutorial.com/lessons/restquicktips.html) / [http/Handle](https://pkg.go.dev/net/http#Handle)
+- add address pattern and switch methods
 
 

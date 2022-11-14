@@ -8,7 +8,8 @@ import (
 
 func main() {
 	log.Println("server started")
-	log.Fatal(http.ListenAndServe(":3000", handler{}))
+	http.Handle("/restapi/v1/movies", handler{})
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }
 
 type handler struct {
@@ -17,15 +18,20 @@ type handler struct {
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	log.Println("serve http")
 	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusOK)
 
-	m := movie{
-		ID:    1,
-		Title: "scarface",
-		Desc:  "Drama",
+	switch r.Method {
+	case http.MethodGet:
+		w.WriteHeader(http.StatusOK)
+		m := movie{
+			ID:    1,
+			Title: "scarface",
+			Desc:  "Drama",
+		}
+		json.NewEncoder(w).Encode(m)
+	default:
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte(`{ "message": "not found" }`))
 	}
-
-	json.NewEncoder(w).Encode(m)
 
 }
 
