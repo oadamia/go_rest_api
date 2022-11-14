@@ -49,5 +49,13 @@ Step by step guid for presentation purposes
 - one more little research [json/decoder](https://pkg.go.dev/encoding/json#Decoder)
 - add post method
 - ref 
+- movie DB
+
+## Refactor
+---
+- one more little research [QuaryParams](https://pkg.go.dev/net/url#URL)
+- ref Get
+- ref Post
+- ref Delete
 
 
