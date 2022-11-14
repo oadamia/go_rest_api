@@ -39,9 +39,14 @@ Step by step guid for presentation purposes
 - Content-Type application/json
 - add "server http" log
 
-## Path and http method
+## Path and http method GET
 ---
 - two more little research [REST API](https://www.restapitutorial.com/lessons/restquicktips.html) / [http/Handle](https://pkg.go.dev/net/http#Handle)
 - add address pattern and switch methods
+
+## HTTP method Post
+---
+- one more little research [json/decoder](https://pkg.go.dev/encoding/json#Decoder)
+- add post method
 
 

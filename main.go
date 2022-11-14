@@ -28,6 +28,11 @@ func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			Desc:  "Drama",
 		}
 		json.NewEncoder(w).Encode(m)
+	case http.MethodPost:
+		w.WriteHeader(http.StatusCreated)
+		var m movie
+		json.NewDecoder(r.Body).Decode(&m)
+		log.Println(m)
 	default:
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte(`{ "message": "not found" }`))
