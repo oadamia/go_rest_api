@@ -1,6 +1,6 @@
 # go_rest_api
 Simple REST API built on Go native libraries.  
-Step by step guid
+Step by step guid for presentation purposes
 
 ## Hello World
 ---
