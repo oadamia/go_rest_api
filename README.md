@@ -1,5 +1,6 @@
 # go_rest_api
-Simple REST API built on Go native libraries. 
+Simple REST API built on Go native libraries.  
+Step by step guid
 
 ## Hello World
 ---
@@ -12,3 +13,10 @@ Simple REST API built on Go native libraries.
 - print "Hello World"
 - *go build*
 - *go run .*
+
+## HTTP Server
+---
+- a little research about Go http package [net/http](https://pkg.go.dev/net/http)
+- Add http listener
+    >   http.ListenAndServe(":3000", nil)
+
