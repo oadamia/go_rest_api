@@ -36,6 +36,8 @@ Step by step guid for presentation purposes
 - one more little research Go [json/encoder](https://pkg.go.dev/encoding/json#Encoder)
 - movie model
 - encode movie model to json
+- Content-Type application/json
+- add "server http" log
 
 
 
