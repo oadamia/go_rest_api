@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+restapi
 
 # Test binary, built with `go test -c`
 *.test
